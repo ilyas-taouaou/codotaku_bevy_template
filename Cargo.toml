@@ -15,14 +15,17 @@ log = { version = "*", features = [
 [profile.dev]
 opt-level = 1
 
-[profile.dev.package."*"]
+[profile.dev.package.bevy]
 opt-level = 3
 
-[profile.release]
-codegen-units = 1
-lto = "thin"
+# [profile.dev.package."*"]
+# opt-level = 3
 
-[profile.wasm-release]
-inherits = "release"
-opt-level = "s"
-strip = "debuginfo"
+# [profile.release]
+# codegen-units = 1
+# lto = "thin"
+
+# [profile.wasm-release]
+# inherits = "release"
+# opt-level = "s"
+# strip = "debuginfo"
